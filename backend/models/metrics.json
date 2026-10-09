@@ -1,0 +1,98 @@
+{
+  "model_name": "gradient_boosting",
+  "test_accuracy": 0.9681,
+  "candidate_accuracies": {
+    "random_forest": 0.9467,
+    "gradient_boosting": 0.9681
+  },
+  "classification_report": {
+    "CRITICAL": {
+      "precision": 0.9529411764705882,
+      "recall": 0.9759036144578314,
+      "f1-score": 0.9642857142857143,
+      "support": 166.0
+    },
+    "DEGRADED": {
+      "precision": 0.9547738693467337,
+      "recall": 0.8755760368663594,
+      "f1-score": 0.9134615384615384,
+      "support": 217.0
+    },
+    "LIMITED": {
+      "precision": 0.9636479591836735,
+      "recall": 0.9888743455497382,
+      "f1-score": 0.9760981912144703,
+      "support": 1528.0
+    },
+    "READY": {
+      "precision": 0.9842726081258192,
+      "recall": 0.9518377693282636,
+      "f1-score": 0.9677835051546392,
+      "support": 789.0
+    },
+    "accuracy": 0.9681481481481482,
+    "macro avg": {
+      "precision": 0.9639089032817038,
+      "recall": 0.9480479415505482,
+      "f1-score": 0.9554072372790906,
+      "support": 2700.0
+    },
+    "weighted avg": {
+      "precision": 0.968303457180105,
+      "recall": 0.9681481481481482,
+      "f1-score": 0.9679080756149272,
+      "support": 2700.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      162,
+      4,
+      0,
+      0
+    ],
+    [
+      8,
+      190,
+      19,
+      0
+    ],
+    [
+      0,
+      5,
+      1511,
+      12
+    ],
+    [
+      0,
+      0,
+      38,
+      751
+    ]
+  ],
+  "classes": [
+    "CRITICAL",
+    "DEGRADED",
+    "LIMITED",
+    "READY"
+  ],
+  "feature_importances": {
+    "coupled_score": 0.16865554626187046,
+    "anomaly_dust": 0.15756120759643183,
+    "fused_perception_confidence": 0.1459557728477966,
+    "anomaly_ldr": 0.13224508678405014,
+    "scenario_step_fraction": 0.0851934729605444,
+    "anomaly_motion": 0.07668381271044962,
+    "ldr": 0.07591032093801925,
+    "anomaly_temperature": 0.06183020773294286,
+    "coupled_detected": 0.04392635125760072,
+    "dust": 0.020882532504321226,
+    "camera_health": 0.01812714426388005,
+    "motion": 0.006735257336748396,
+    "lidar_health": 0.0040411310463952,
+    "radar_health": 0.0014792658981452526,
+    "temperature": 0.0007728898608039429
+  },
+  "train_rows": 8100,
+  "test_rows": 2700
+}
